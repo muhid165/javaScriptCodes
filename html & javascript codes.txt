@@ -1,0 +1,192 @@
+HTML & JAVASCRIPT <:<:
+
+// do-while loop
+CODE:
+let i=1;
+do{
+    console.log('hello ');
+    i++;
+}
+while(i<=0)
+
+---------------------------------------------------------------------------------------------------------
+// objects in js
+let cat = {
+    //this is an object 
+    name: "tom",
+    age: 10
+}
+----------------------------------------------------------
+// array in js
+let arr2 = ['hello','bye','world','!!!!'];
+--------------------------------------------------------
+// for loop  in js
+for(let j=1;j<=5;j++){
+    console.log(" **");
+
+    for(let i =1;i<=5;i++)
+        console.log("## ");
+
+}
+-----------------------------------------------------------------
+// if-else in js
+let a = 5 , b = 4 , c = 8 , d = 1;
+ 
+let result = a>b && c<a;
+if(result=== true){
+    console.log("it's TRUEEEE");
+}
+else{
+    console.log("it's falseeeee");
+}
+console.log("i think if-else got executed successfullyyyyyy!!!!!!!!!!");
+
+--------------------------------------------------------------------------
+// if - else if - else
+let marks = 89;
+if(marks===35){
+    console.log("you just got passing marks");
+}
+else if(marks>35 && marks<55){
+    console.log("passed but  neeeds more improvement ");
+}
+else if(marks>=55 && marks<65){
+    console.log("passed with good marks but neeeds more improvement ");
+}
+else if(marks>=65 && marks<74){
+    console.log("passed with: first classs ");
+}
+else if(marks>=75){
+    console.log("passed with:  distinct");
+}
+else{
+    console.log("you failed duffer!!!!!");
+}
+----------------------------------------------------------------------------------------------------------
+// javascript switch in HTML
+CODE:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center ;">hell world!!!!!!!!!</h1>
+    
+    <script type="text/javascript">
+        let dayCode = 9;
+        document.writeln("<h1>your daycode ",dayCode,"</h1>")
+        switch(dayCode){
+            case 1:
+                document.write("<h2>The day is monday !!!</h2>");
+                break;
+            
+            case 2:
+                document.write("<h2>The day is tuesday !!!</h2>");
+                break;
+            case 3:
+                document.write("<h2>The day is wednesday !!!</h2>");
+                break;
+            case 4:
+                document.write("<h2>The day is thursday !!!</h2>");
+                break;
+
+            case 5:
+                document.write("<h2>The day is friday !!!</h2>");
+                break;
+            case 6:
+                document.write("<h2>The day is saturday !!!</h2>");
+                break;
+            case 7:
+                document.write("<h2>The day is sunday !!!</h2>");
+                break;
+            default:
+                document.write("<h2>wrong day code duffer ^^^^</h2>")
+        }
+    </script> 
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------------------
+//functions  for printing  pattern 
+CODE:
+function printPattern() {
+    let mystring = "", n = 4;
+    for (let i = 0; i <= n; i++) {
+        for (let j = 1; j <= n; j++) {
+            mystring += " * ";
+        }
+        mystring += "\n";
+    }
+    console.log(mystring)
+}
+
+OUTPUT:
+[Running] node "c:\Users\Muhid\Desktop\javaScriptCodes\main.js"
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  * 
+
+
+[Done] exited with code=0 in 0.31 seconds
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+// functions with parameters
+ CODE:
+function yourname(fname , lname) {
+    let name = fname + lname;
+    return name;
+}
+let output = yourname("muhid ","shaikh ")
+console.log(output)
+
+
+OUTPUT:
+[Running] node "c:\Users\Muhid\Desktop\javaScriptCodes\main.js"
+mahid shaikh 
+
+[Done] exited with code=0 in 0.38 seconds
+-----------------------------------------------------------------------------------------------------------------------------
+// LOCAL AND GLOBAL VARIABLES ON HTML DOC 
+CODE:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center ;">hell world!!!!!!!!!</h1>
+    
+    <script type="text/javascript">
+        let globlvar = "<p>THIS IS A GLOBAL VARIABLE !!!</p> ";
+        document.writeln("<p>\n<p/>")
+        document.writeln(globlvar);
+        function myfunc(){
+            let localvar = "<p>THIS IS A LOCAL VARIABLE WHICH IS ACCESSIBLE ONLY IN THIS FUNCTION!!</p>";
+            document.writeln(localvar);
+
+        }
+        myfunc();
+    </script> 
+</body>
+</html>
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
